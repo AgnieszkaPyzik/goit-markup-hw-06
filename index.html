@@ -365,22 +365,47 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="sgn-in-footer">
           <form>
             <h4 class="footer-social">zapisz się do newslettera</h4>
-            <label>
-              <input type="email" class="sgn-in-email" placeholder="E-mail" required />
+              <input type="email" class="sgn-in-email" name="email" placeholder="E-mail" required />
               <button type="submit" class="sgn-in-button">Zapisz się
               <svg class="sgn-in-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
               </button>
-            </label>
           </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form>
+          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <label>
+            Imię
+           <input type="text" name="name" />
+           <svg width="18" hight="18">
+              <use href="./images/icons.svg#icon-person-black"></use>
+           </svg>
+           </label>
+          <label>
+            Telefon
+            <input type="tel" name="phone" />
+            <svg width="18" hight="18">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Komentarz
+            <textarea name="text" class="comment-box" placeholder="Wprowadź tekst" ></textarea>
+          </label>
+            <input type="checkbox" name="policy" value="conditions"/> Oświadczam iż akceptuję <a href="#">Regulamin </a> i <a href="#">Politykę Prywatności.</a><br />
+            <button type="submit">Wyślij</button>
+        </form>
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon" width="17" height="17">
             <use href="./images/icons.svg#icon-close-black"></use>
