@@ -579,10 +579,20 @@ footer {
 .checkbox-input:focus,
 .checkbox-input:hover {
   background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+.modal-input:hover {
+  outline: none;
+  border-color: #2196f3;
 }
 .modal-input:focus-within + svg {
+  outline: none;
   border-color: var(--theme-color);
   fill: var(--theme-color);
+}
+.modal textarea[name="text"]:focus-within {
+  outline: none;
+  border-color: var(--theme-color);
 }
 .checkbox-input {
   width: 16px;
