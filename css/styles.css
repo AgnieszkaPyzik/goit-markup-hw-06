@@ -528,13 +528,14 @@ footer {
   transform: translate(30%, -25%);
   left: 52px;
 }
-.modal-label input {
+.modal-input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
   position: relative;
+  padding-left: 42px;
 }
 .modal-label {
   font-family: 'Roboto';
@@ -544,7 +545,7 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
-  position: relative;
+  
   display: flex;
   flex-direction: column;
   padding: 0 40px 10px 40px;
@@ -570,22 +571,30 @@ footer {
   color: var(--brand-color);
   padding: 40px 40px 12px 40px;
 }
-.modal input {
-  padding-left: 42px;
-}
 .checkbox-label {
   margin: 20px 54px 30px 54px;
+  transition: background-color 0.2s easy-in, box-shadow 0, 15s easy-in;
+  display: block;
+}
+.checkbox-input:focus,
+.checkbox-input:hover {
+  background-color: var(--theme-color);
+}
+.modal-input:focus-within + svg {
+  border-color: var(--theme-color);
+  fill: var(--theme-color);
 }
 .checkbox-input {
-width: 16px;
-height: 15px;
-background: var(--brand-color);
-display: inline-flex;
-align-items: center;
+  width: 16px;
+  height: 15px;
+  border-color: var(--brand-color);
+  display: inline-flex;
+  align-items: center;
 }
 .check {
   position: relative;
   transform: translate(30%, -320%);
+  visibility: hidden;
 }
 .policy {
   color: var(--theme-color);
