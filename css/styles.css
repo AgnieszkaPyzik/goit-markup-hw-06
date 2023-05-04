@@ -2,7 +2,7 @@
   --brand-color: #212121;
   --theme-color: #2196f3;
   --pharagraph-color: #757575;
-  --light-color: #ffffff;
+  --light-color: #fff;
   --icon-color: #afb1b8;
   --background-color: #f5f4fa;
   --font-primary: 'Roboto', sans-serif;
@@ -318,18 +318,14 @@ p {
   flex-basis: calc((100%-90px) / 3);
   gap: 30px;
 }
-.box {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-}
-.box:hover,
-.box:focus {
+.card figcaption:hover,
+.card figcaption:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card {
   width: 370px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   background: var(--light-color);
 }
 .img-container > img {
@@ -341,6 +337,7 @@ p {
 .img-container {
   position: relative;
   overflow: hidden;
+  border: 1px solid #eee;
 }
 .box-card {
   margin: 0;
@@ -352,10 +349,11 @@ p {
   background: rgba(33, 150, 243, 0.9);
   padding: 49px 45px 49px 24px;
   color: var(--light-color);
+  border: none;
 }
 .card figcaption {
   padding: 20px 0 20px 24px;
-}
+ }
 .box-card {
   transform: translateY(100%);
   transition: transform 0.3s ease-in;
@@ -365,6 +363,7 @@ p {
 }
 .product {
   padding-bottom: 4px;
+  border: none;
 }
 .icon-list {
   display: inline-flex;
@@ -470,11 +469,9 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .close-icon {
-  fill: #000000;
-  display: flex;
-  justify-items: center;
-  align-content: center;
-  margin: auto;
+  fill: #000;
+  position: relative;
+  top: 3px;
 }
 .modal {
   position: absolute;
@@ -518,6 +515,7 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color:var(--light-color);
 }
 .sgn-in-footer {
   margin-left: 8px;
@@ -545,7 +543,7 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
-  
+
   display: flex;
   flex-direction: column;
   padding: 0 40px 10px 40px;
@@ -590,7 +588,7 @@ footer {
   border-color: var(--theme-color);
   fill: var(--theme-color);
 }
-.modal textarea[name="text"]:focus-within {
+.modal textarea[name='text']:focus-within {
   outline: none;
   border-color: var(--theme-color);
 }

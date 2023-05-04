@@ -368,13 +368,15 @@
         <div class="sgn-in-footer">
           <form>
             <h4 class="footer-social">zapisz się do newslettera</h4>
-              <input type="email" class="sgn-in-email" name="email" placeholder="E-mail" required />
-              <button type="submit" class="sgn-in-button">Zapisz się
+            <input type="email" class="sgn-in-email" name="email" placeholder="E-mail" required />
+            <button type="submit" class="sgn-in-button">
+              Zapisz się
               <svg class="sgn-in-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
-              </button>
+            </button>
           </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -383,36 +385,40 @@
           <p>Zostaw swoje dane w formularzu poniżej</p>
           <label class="modal-label">
             Imię
-           <input type="text" name="name" class="modal-input"/>
-           <svg class="modal-icon" width="18" hight="18">
+            <input type="text" name="name" class="modal-input" />
+            <svg class="modal-icon" width="18" hight="18">
               <use href="./images/icons.svg#icon-person-black"></use>
-           </svg>
-           </label>
-           <label class="modal-label">
+            </svg>
+          </label>
+          <label class="modal-label">
             Telefon
-            <input type="tel" name="phone" class="modal-input"/>
+            <input type="tel" name="phone" class="modal-input" />
             <svg class="modal-icon" width="18" hight="18">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </label>
           <label class="modal-label">
             E-mail
-            <input type="email" name="email" class="modal-input"/>
+            <input type="email" name="email" class="modal-input" />
             <svg class="modal-icon" width="18" hight="18">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </label>
           <label class="modal-label">
             Komentarz
-            <textarea name="text" class="comment-box" placeholder="Wprowadź tekst" ></textarea>
+            <textarea name="text" class="comment-box" placeholder="Wprowadź tekst"></textarea>
           </label>
           <div class="checkbox-label">
-          <label>
-            <input type="checkbox" name="policy" value="conditions" class="checkbox-input"/> <span class="policy-text"> Oświadczam iż akceptuję <a class="policy" href="#">Regulamin </a> i <a class="policy" href="#">Politykę Prywatności.</a></span>
-            <svg class="check" width="11" height="8">
-              <use href="./images/icons.svg#icon-Vector-check"></use>
-            </svg>
-          </label>
+            <label>
+              <input type="checkbox" name="policy" value="conditions" class="checkbox-input" />
+              <span class="policy-text">
+                Oświadczam iż akceptuję <a class="policy" href="#">Regulamin </a> i
+                <a class="policy" href="#">Politykę Prywatności.</a></span
+              >
+              <svg class="check" width="11" height="8">
+                <use href="./images/icons.svg#icon-Vector-check"></use>
+              </svg>
+            </label>
           </div>
           <label>
             <button type="submit" class="sent-button">Wyślij</button>
@@ -425,6 +431,6 @@
         </button>
       </div>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
