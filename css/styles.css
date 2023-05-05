@@ -125,7 +125,9 @@ p {
 .link-nav:is(:hover, :focus, :active) {
   color: var(--theme-color);
 }
-.link-nav:active::after {
+.link-nav:active::after,
+.link-nav-agencja::after,
+.link-nav-portfolio::after {
   content: '';
   position: absolute;
   width: 53px;
