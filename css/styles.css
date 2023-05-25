@@ -126,7 +126,7 @@ p {
   color: var(--theme-color);
 }
 .link-nav:active::after,
-.link-nav-agencja::after,
+.link-nav-agency::after,
 .link-nav-portfolio::after {
   content: '';
   position: absolute;

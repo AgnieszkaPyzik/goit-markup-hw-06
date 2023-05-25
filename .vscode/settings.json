@@ -27,5 +27,6 @@
   "window.zoomLevel": -1,
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.formatOnSave": true,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "liveServer.settings.port": 5501
 }
